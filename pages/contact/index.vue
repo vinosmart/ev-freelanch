@@ -120,28 +120,28 @@
                 <div class="flex gap-1 w-[266px]">
                   <a href="https://www.facebook.com/" class="facebook">
                     <img
-                      src="facebook.png"
+                      src="/facebook.png"
                       alt=""
                       class="w-10 h-10 rounded-full"
                     />
                   </a>
                   <a href="https://twitter.com/" class="facebook">
                     <img
-                      src="twitter.png"
+                      src="/twitter.png"
                       alt=""
                       class="w-10 h-10 rounded-full"
                     />
                   </a>
                   <a href="https://bd.linkedin.com/" class="facebook">
                     <img
-                      src="linkedin.png"
+                      src="/linkedin.png"
                       alt=""
                       class="w-10 h-10 rounded-full"
                     />
                   </a>
                   <a href="https://www.instagram.com/" class="facebook">
                     <img
-                      src="insta.png"
+                      src="/insta.png"
                       alt=""
                       class="w-10 h-10 rounded-full"
                     />

@@ -31,7 +31,7 @@
               class="w-[400px] h-[224px] rounded-md"
             />
             <p class="text-[#bdbadb] pb-[15px] text-xs pt-5">{{ card.date }}</p>
-            <NuxtLink to="./blog/blog1" class="text-2xl text-white ">
+            <NuxtLink to="./blog/blog1" class="text-2xl text-white">
               {{ card.title }}
             </NuxtLink>
             <p class="text-[#bdbadb] pt-[15px] pb-[15px] text-sm">
@@ -40,7 +40,7 @@
             <p class="text-[#9ff550] font-normal flex gap-1">
               READ MORE
               <NuxtLink to="./blog/blog1" class="text-[#9ff550] font-normal">
-                <img src="arrow.png" alt="" class="w-[19px] h-[16px] mt-1" />
+                <img src="/arrow.png" alt="" class="w-[19px] h-[16px] mt-1" />
               </NuxtLink>
             </p>
           </div>

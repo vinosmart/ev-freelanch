@@ -110,7 +110,7 @@
                 class="flex gap-[20px] pt-6 md:pt-10 lg:pt-0 px-2 xl:gap-[46px]"
               >
                 <img
-                  src="round.jpg"
+                  src="/round.jpg"
                   alt=""
                   class="w-[35px] h-[35px] bg-[#9FF550]"
                 />
@@ -126,7 +126,7 @@
               </div>
               <div class="flex gap-[20px] pt-6 md:pt-10 px-2 xl:gap-[46px]">
                 <img
-                  src="round.jpg"
+                  src="/round.jpg"
                   alt=""
                   class="w-[35px] h-[35px] bg-[#9FF550]"
                 />
@@ -141,7 +141,7 @@
               </div>
               <div class="flex gap-[20px] pt-6 md:pt-10 px-2 xl:gap-[46px]">
                 <img
-                  src="round.jpg"
+                  src="/round.jpg"
                   alt=""
                   class="w-[35px] h-[35px] bg-[#9FF550]"
                 />
@@ -157,7 +157,7 @@
               </div>
               <div class="flex gap-[20px] pt-6 md:pt-10 px-2 xl:gap-[46px]">
                 <img
-                  src="round.jpg"
+                  src="/round.jpg"
                   alt=""
                   class="w-[35px] h-[35px] bg-[#9FF550]"
                 />
