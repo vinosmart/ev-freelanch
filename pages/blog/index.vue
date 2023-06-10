@@ -1,20 +1,25 @@
 <template>
-  <div class="mt-[88px]">
+  <div class="">
     <!-- main -->
-    <div class="flex flex-col items-center justify-center bg-[#020015] py-32">
-      <h2 class="mb-4 text-3xl font-semibold text-white">
-        <span class="text-stroke">BLOG</span>
-      </h2>
-      <p class="font-[14px] text-white">
-        Home / <span class="text-[#9FF550]">BLOG</span>
-      </p>
+    <div class="bg-[url('/bg/all.png')] bg-no-repeat bg-cover w-full">
+      <div class="flex flex-col items-center justify-center py-32">
+        <h2 class="mb-4 text-3xl font-semibold text-white">
+          <span class="text-stroke">BLOG</span>
+        </h2>
+        <p class="font-[14px] text-white">
+          Home / <span class="text-[#9FF550]">BLOG</span>
+        </p>
+      </div>
     </div>
+
     <!-- block -->
-    <div class="bg-[#020015]">
+    <div class="bg-[#020015]  pb-20 mx-auto text-center w-full">
       <!-- content -->
       <div class="flex flex-col items-center mb-[70px]">
         <p class="text-base text-[#9FF550] font-medium">LATEST POSTS</p>
-        <p class="mt-5 text-5xl font-normal text-white">Read Our Blogs</p>
+        <p class="mt-5 text-[32px] md:text-5xl font-normal text-white">
+          Read Our Blogs
+        </p>
         <p class="my-[15px] text-sm text-[#bdbadb]">
           HELP AGENCIES TO DEFINE THEIR NEW BUSINESS OBJECTIVES AND THEN CREATE
           PROFESSIONAL SOFTWARE.
@@ -22,15 +27,21 @@
       </div>
 
       <!-- card -->
-      <div class="flex flex-wrap justify-center">
+      <div
+        class="flex flex-wrap justify-center mx-auto md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1440px] gap-2 max-w-full"
+      >
         <div v-for="(card, index) in cards" :key="index">
-          <div class="w-[475px] px-6 mt-22">
+          <div
+            class="w-full md:w-[238px] lg:w-[328px] xl:w-[450px] px-6 md:px-2 mt-22 text-left"
+          >
             <img
               :src="card.image"
               alt=""
-              class="w-[400px] h-[224px] rounded-md"
+              class=" w-full xl:w-[400px] xl:h-[224px] bg-cover md:w-[235px] md:h-[121px] lg:w-[380px] lg:h-[157px] rounded-md"
             />
-            <p class="text-[#bdbadb] pb-[15px] text-xs pt-5">{{ card.date }}</p>
+            <p class="text-[#bdbadb] pb-[15px] text-xs pt-5">
+              {{ card.date }}
+            </p>
             <NuxtLink to="./blog/blog1" class="text-2xl text-white">
               {{ card.title }}
             </NuxtLink>
@@ -47,6 +58,7 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>

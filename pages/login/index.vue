@@ -1,10 +1,12 @@
 <template>
   <div class="bg-black">
     <div
-      class="bg-[url('/bg/loginbg.png')] opacity-50 pb-[200px] bg-no-repeat bg-cover pt-[129px] bg-black text-white"
+      class="bg-[url('/bg/loginbgb.png')] pb-[100px] md:pb-[200px] bg-no-repeat bg-cover pt-[129px] bg-black text-white"
     >
       <div class="pt-[129px] text-center">
-        <p class="stroke lg:mt-10 text-[48px] lg:text-[36px]">Login</p>
+        <p class="stroke lg:mt-10 text-2xl md:text-[48px] lg:text-[36px]">
+          Login
+        </p>
         <p class="text-sm font-semibold mt-[15px]">
           Home/ <span class="text-[#B8F146]">Login</span>
         </p>
@@ -12,20 +14,24 @@
     </div>
 
     <!-- login form -->
-    <div class="flex justify-center pt-10 bg-[#020015]">
-      <div class="w-[526px] h-[446px] bg-[#04091b] px-[50px]">
+    <div
+      class="flex justify-center bg-[#020015] bg-[url('/bg/logincard.png')] bg-no-repeat bg-blend-lighten bg-contain"
+    >
+      <div
+        class="w-full md:w-[526px] h-[446px] bg-[#04091b] px-3.5 md:px-[50px]"
+      >
         <div class="flex flex-col items-center px-3 pt-6">
           <p class="text-left text-white">Login To Your Account</p>
           <input
             type="text"
             placeholder="Email or Username"
-            class="text-[#bdbadb] border-b-[1px] border-gray-900 bg-[#04091b] outline-none w-[426px] h-[50px] my-[15px] text-sm font-normal px-[2px] hover:border-[#9FF550]"
+            class="text-[#bdbadb] border-b-[1px] border-gray-900 bg-[#04091b] outline-none w-full md:w-[426px] h-[50px] my-[15px] text-sm font-normal px-[2px] hover:border-[#9FF550]"
             required
           />
           <input
             type="password"
             placeholder="Password"
-            class="text-[#bdbadb] border-b-[1px] border-gray-900 bg-[#04091b] outline-none w-[426px] h-[50px] my-[15px] text-sm font-normal px-[2px] hover:border-[#9FF550]"
+            class="text-[#bdbadb] border-b-[1px] border-gray-900 bg-[#04091b] outline-none w-full md:w-[426px] h-[50px] my-[15px] text-sm font-normal px-[2px] hover:border-[#9FF550]"
             required
           />
           <div class="flex justify-between w-full">
@@ -38,7 +44,7 @@
             <p class="text-[#81ee50]">Forgot password?</p>
           </div>
           <button
-            class="custom-gradient w-[426px] h-[58px] rounded-md mt-10 text-[#284325] pt-22"
+            class="custom-gradient w-full md:w-[426px] h-[58px] rounded-md mt-10 text-[#284325] pt-22"
           >
             SIGN IN
           </button>
@@ -110,3 +116,9 @@
     <Footer />
   </div>
 </template>
+<script>
+import { defineComponent } from "vue";
+definePageMeta({ layout: "default" });
+
+export default defineComponent({});
+</script>

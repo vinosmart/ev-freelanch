@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[88px]">
+  <div>
     <!-- main -->
     <div class="flex flex-col items-center justify-center bg-[#020015] py-32">
       <h2 class="mb-4 text-3xl font-semibold text-white">
@@ -11,7 +11,7 @@
     </div>
     <!-- contact  -->
     <div class="bg-[#020015] flex flex-col justify-center items-center">
-      <div class="h-[1000px] flex w-[1320px] justify-center gap-[109px]">
+      <div class="h-[800px] flex w-[1320px] justify-center gap-[109px]">
         <!-- form -->
         <div class="w-[526px] h-[562px] bg-[#04091b] px-[50px]">
           <div class="flex flex-col items-center justify-center px-3 pt-6">
@@ -153,6 +153,7 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 

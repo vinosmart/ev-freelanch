@@ -17,11 +17,13 @@
             BEST INVESTMENTS PLAN FOR
           </h1>
           <p class="stroke lg:mt-10 text-[48px] lg:text-[80px]">WORLDWIDE</p>
-          <button
-            class="text-sm h-[58px] px-12 font-semibold text-black mt-16 rounded bg-gradient-to-r from-[#B8F146] to-[#6DFD63]"
+
+          <a
+            href="https://bugfinder.net/"
+            class="text-sm h-[58px] px-12 py-3.5 font-semibold text-black mt-16 rounded bg-gradient-to-r from-[#B8F146] to-[#6DFD63]"
           >
             Learn More
-          </button>
+          </a>
         </div>
         <div
           class="lg:w-[400px] flex flex-col md:flex-row text-center md:text-start xl:w-[550px] pt-[100px] lg:pt-0 gap-10 lg:gap-0 justify-center lg:justify-end lg:flex-col items-center lg:items-end"
@@ -56,15 +58,17 @@
         </p>
       </div>
       <!-- box1 -->
-      <div class="bg-[#020015]">
-        <div class="about-section">
-          <div class="container">
-            <div class="lg:flex justify-center gap-[48px] p-2 md:px-10">
-              <div class="lg:w-[456px] xl:w-[660px]">
+      <div class="bg-[#020015] w-full flex items-center justify-center">
+        <div class="w-full about-section">
+          <div class="container w-full mx-auto">
+            <div
+              class="lg:w-[1024px] lg:flex justify-center gap-[48px] xl:gap-0 p-2 md:px-10 xl:w-full xl:px-10 xl:ml-[50px]"
+            >
+              <div class="lg:w-[456px] xl:w-[636px]">
                 <div class="mb-5 header-text">
-                  <h5 class="pl-[15px] text-[#9FF550]">ABOUT US</h5>
+                  <h5 class="pl-[15px] text-[#9FF550] md:mb-5">ABOUT US</h5>
                   <h2
-                    class="text-[32px] flex flex-col md:flex-row md:gap-3 font-medium mb-4 md:mb-10 md:text-5xl md:font-semibold text-white"
+                    class="text-[32px] flex flex-col md:flex-row md:gap-3 font-medium mb-4 md:mb-10 md:text-5xl md:font-semibold text-white lg:flex-col xl:flex-row"
                   >
                     Welcome to <span class="text-stroke">Hyippro</span>
                   </h2>
@@ -97,15 +101,15 @@
                   sequence
                 </p>
 
-                <a
-                  class="px-[35px] py-[18px] lg:py-[18px] xl:py-[22px] bg-[#9FF550] text-[#020015] rounded-md"
-                  href="https://script.bugfinder.net/hyippro/screaminlizard/about"
+                <NuxtLink
+                  class="px-[35px] xl:px-[40px] py-[18px] lg:py-[18px] xl:py-[20px] custom-gradient text-[#020015] rounded-md"
+                  to="/about"
                   target="_blank"
-                  >Know more</a
+                  >Know more</NuxtLink
                 >
               </div>
               <div
-                class="md:w-[600px] md:h-[366px] lg:w-[370px] lg:h-[247px] mt-20 md:mx-auto"
+                class="md:w-[600px] md:h-[366px] lg:h-[247px] lg:w-[420px] mt-20 md:mx-auto xl:w-[600px]"
               >
                 <div class="">
                   <img
@@ -355,7 +359,8 @@
         </div>
       </div>
     </section>
-    <div class=""><Footer class="bg-black" /></div>
+    <!-- <div class=""><Footer class="bg-black" /></div> -->
+    <Footer />
   </div>
 </template>
 <script setup>

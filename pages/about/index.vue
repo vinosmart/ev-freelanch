@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-[88px]">
+  <div class="bg-black">
     <!-- About  -->
     <div
-      class="flex flex-col items-center justify-center w-full pt-20 pb-20 bg-[#020015]"
+      class="flex flex-col items-center justify-center w-full pt-[100px] md:pt-20 pb-20 bg-[#020015]"
     >
       <h2 class="mb-4 text-3xl font-semibold text-white">
         <span class="text-stroke">About Us</span>
@@ -12,11 +12,11 @@
       </p>
     </div>
     <!-- box1 -->
-    <div class="bg-[#020015]">
-      <div class="about-section">
-        <div class="container">
+    <div class="bg-[#020015] w-full flex items-center justify-center">
+      <div class="w-full about-section">
+        <div class="container w-full mx-auto">
           <div
-            class="lg:w-[1024px] lg:flex justify-center gap-[48px] xl:gap-[60px] p-2 md:px-10 xl:w-[1420px] xl:px-10 xl:ml-[50px]"
+            class="lg:w-[1024px] lg:flex justify-center gap-[48px] xl:gap-0 p-2 md:px-10 xl:w-full xl:px-10 xl:ml-[50px]"
           >
             <div class="lg:w-[456px] xl:w-[636px]">
               <div class="mb-5 header-text">
@@ -53,12 +53,11 @@
                 Missing Secure &amp; Reliable The phrasal sequence of the Lorem
                 Ipsum text is now so widespread that many the starting sequence
               </p>
-
-              <a
+              <NuxtLink
                 class="px-[35px] xl:px-[40px] py-[18px] lg:py-[18px] xl:py-[20px] custom-gradient text-[#020015] rounded-md"
-                href="https://script.bugfinder.net/hyippro/screaminlizard/about"
+                to="/about"
                 target="_blank"
-                >Know more</a
+                >Know more</NuxtLink
               >
             </div>
             <div
@@ -175,9 +174,214 @@
         </div>
       </div>
     </div>
+    <div
+      class="mx-auto text-black bg-black swiper mySwiper max-w-[1320px] mb-[125px] mt-[50px]"
+    >
+      <div class="swiper-wrapper">
+        <div
+          class="flex items-center justify-center swiper-slide"
+          v-for="(client, index) in clients"
+          :key="index"
+        >
+          <img
+            :src="client.img"
+            class="rounded-xl w-[100px] h-[60px] px-1 md:px-0"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <Footer />
   </div>
 </template>
+<script setup>
+useHead({
+  script: [
+    {
+      src: "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js",
+    },
+  ],
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css",
+    },
+  ],
+});
+</script>
+<script>
+import { defineComponent } from "vue";
+definePageMeta({ layout: "default" });
 
+export default defineComponent({
+  data() {
+    return {
+      clients: [
+        {
+          img: "/swiper/s1.png",
+        },
+
+        {
+          img: "/swiper/s2.png",
+        },
+
+        {
+          img: "/swiper/s3.png",
+        },
+        {
+          img: "/swiper/s4.png",
+        },
+
+        {
+          img: "/swiper/s5.png",
+        },
+
+        {
+          img: "/swiper/s6.png",
+        },
+        {
+          img: "/swiper/s7.png",
+        },
+
+        {
+          img: "/swiper/s8.png",
+        },
+
+        {
+          img: "/swiper/s9.png",
+        },
+        {
+          img: "/swiper/s10.png",
+        },
+
+        {
+          img: "/swiper/s11.png",
+        },
+
+        {
+          img: "/swiper/s12.png",
+        },
+
+        {
+          img: "/swiper/s13.png",
+        },
+
+        {
+          img: "/swiper/s14.png",
+        },
+
+        {
+          img: "/swiper/s15.png",
+        },
+
+        {
+          img: "/swiper/s16.png",
+        },
+
+        {
+          img: "/swiper/s17.png",
+        },
+
+        {
+          img: "/swiper/s18.png",
+        },
+
+        {
+          img: "/swiper/s19.png",
+        },
+
+        {
+          img: "/swiper/s20.png",
+        },
+
+        {
+          img: "/swiper/s21.png",
+        },
+
+        {
+          img: "/swiper/s22.png",
+        },
+
+        {
+          img: "/swiper/s23.png",
+        },
+
+        {
+          img: "/swiper/s24.png",
+        },
+
+        {
+          img: "/swiper/s25.png",
+        },
+
+        {
+          img: "/swiper/s26.png",
+        },
+
+        {
+          img: "/swiper/s27.png",
+        },
+
+        {
+          img: "/swiper/s28.png",
+        },
+        {
+          img: "/swiper/s29.png",
+        },
+
+        {
+          img: "/swiper/s30.png",
+        },
+
+        {
+          img: "/swiper/s31.png",
+        },
+
+        {
+          img: "/swiper/s32.png",
+        },
+      ],
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+
+    new window.Swiper(".mySwiper", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: "4.1",
+        },
+        768: {
+          slidesPerView: "6",
+        },
+
+        1024: {
+          slidesPerView: "8",
+        },
+
+        1440: {
+          slidesPerView: "8",
+          spaceBetween: 40,
+          centerslide: true,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  },
+});
+</script>
 <style>
 .text-stroke {
   -webkit-text-fill-color: transparent;

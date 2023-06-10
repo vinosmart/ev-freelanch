@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[88px]">
+  <div>
     <!-- main -->
     <div
       class="flex flex-col items-center justify-center w-full pt-20 pb-20 bg-[#020015]"

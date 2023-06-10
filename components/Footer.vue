@@ -1,15 +1,16 @@
 <template>
-  <div class="bg-black px-[30px]">
+  <div class="bg-black">
     <footer class="bg-black text-[#6f42c1] font-normal">
       <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
         <div class="md:flex">
-          <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="items-center max-">
+          <div class="mb-6 md:mb-0 px-3.5">
+            <a href="#" class="items-center max-">
               <img
                 src="https://script.bugfinder.net/hyippro/screaminlizard/assets/uploads/logo/logo.png"
+                class="w-[130px] md:w-[180px] h-[60px] bg-cover"
                 alt=""
               />
-              <p class="text-sm text-white w-[300px] mt-4">
+              <p class="text-sm text-white md:w-[300px] mt-4">
                 We are a full service like readable english. Many desktop
                 publishing packages and web page editor now use lorem Ipsum
                 sites still in their.
@@ -107,7 +108,7 @@
             </a>
           </div>
           <div
-            class="grid grid-cols-2 ml-[10%] mt-10 gap-8 text-sm sm:gap-10 sm:grid-cols-3 text-white"
+            class="grid grid-cols-1 px-3.5 bg-[url('/bg/loginbgb.png')] bg-cover bg-no-repeat gap-8 mt-10 text-sm text-white sm:gap-10 sm:grid-cols-3"
           >
             <div>
               <h2 class="mb-6 text-sm font-semibold text-white uppercase">
