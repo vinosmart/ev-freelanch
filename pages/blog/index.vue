@@ -13,7 +13,7 @@
     </div>
 
     <!-- block -->
-    <div class="bg-[#020015]  pb-20 mx-auto text-center w-full">
+    <div class="bg-[#020015] pb-20 mx-auto text-center w-full">
       <!-- content -->
       <div class="flex flex-col items-center mb-[70px]">
         <p class="text-base text-[#9FF550] font-medium">LATEST POSTS</p>
@@ -37,7 +37,7 @@
             <img
               :src="card.image"
               alt=""
-              class=" w-full xl:w-[400px] xl:h-[224px] bg-cover md:w-[235px] md:h-[121px] lg:w-[380px] lg:h-[157px] rounded-md"
+              class="w-full xl:w-[400px] xl:h-[224px] bg-cover md:w-[235px] md:h-[121px] lg:w-[380px] lg:h-[157px] rounded-md"
             />
             <p class="text-[#bdbadb] pb-[15px] text-xs pt-5">
               {{ card.date }}
